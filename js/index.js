@@ -29,6 +29,7 @@ function handleSend() {
             urlInput.focus();
             chatHistory = chatHistory.slice(0, -1);
             sendBtn.disabled = false;
+            responseDiv.innerHTML = "Please hook me up to a server.";
             throw new Error('Error connecting to endpoint', response);
         }
     })
