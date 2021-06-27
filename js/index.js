@@ -5,6 +5,13 @@ const promptInput = document.getElementById('prompt');
 
 let chatHistory = [];
 
+promptInput.addEventListener('keyup', e => {
+    if (e.code === 'Enter') {
+        e.preventDefault();
+        sendBtn.click();
+    }
+});
+
 sendBtn.addEventListener('click', () => {
     handleSend();
 });
