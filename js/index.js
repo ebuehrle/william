@@ -33,15 +33,19 @@ function handleSend() {
         if (response.ok) {
             return response.text();
         } else {
-            urlInput.focus();
-            chatHistory = chatHistory.slice(0, -1);
-            sendBtn.disabled = false;
-            responseDiv.innerHTML = "Please hook me up to a server.";
-            throw new Error('Error connecting to endpoint', response);
+            throw new Error(response.statusText);
         }
     })
     .then(text => handleResponse(text))
-    .catch(e => console.log(e));
+    .catch(e => requestError(e));
+}
+
+function requestError(e) {
+    console.error(e);
+    urlInput.focus();
+    chatHistory = chatHistory.slice(0, -1);
+    sendBtn.disabled = false;
+    responseDiv.innerHTML = "Please hook me up to a server.";
 }
 
 function handleResponse(response) {
