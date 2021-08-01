@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>William</title>
+        <link rel="icon" type="image/png" href="img/charles.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+        <link rel="stylesheet" href="css/styles.css"/>
+    </head>
+    <body>
+        <main>
+            <a class="github-fork-ribbon" href="https://github.com/ebuehrle/william" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+            <div class="spacer-top"></div>
+            <div class="avatar-container">
+                <img class="avatar" src="img/avatar.png"/>
+            </div>
+            <div class="spacer-mid"></div>
+            <div class="chat">
+                <div id="response" class="response">
+                    Hi there, nice to meet you!
+                </div>
+                <div class="prompt">
+                    <input type="text" id="prompt" placeholder="Ask me anything...">
+                    <button id="send">
+                        <span class="material-icons">
+                            send
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="spacer-btm"></div>
+        </main>
+    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</html>

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(181, 179, 184);
+    font-family: 'VT323', monospace;
+    color: rgb(153, 134, 97);
+}
+
+.github-fork-ribbon:before {
+    background-color: rgb(153, 134, 97);
+}
+
+.endpoint-config {
+    position: fixed;
+    padding: 5px;
+    display: flex;
+}
+
+#url {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    color: inherit;
+    width: 300px;
+}
+
+main {
+    min-height: inherit;
+    max-width: 500px;
+    margin: 0px auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.spacer-top, .spacer-btm {
+    flex: 2;
+}
+
+.spacer-mid {
+    flex: 1;
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.response {
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: xx-large;
+}
+
+.prompt {
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.prompt input {
+    margin-left: auto;
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    font-size: x-large;
+    width: 70%;
+}
+
+#send {
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: inherit;
+}
+
+#send:disabled {
+    cursor: wait;
+    color: rgba(206, 190, 160, 0.596);
+}
