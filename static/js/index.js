@@ -29,5 +29,6 @@ function handleSend() {
 
 function handleResponse(response) {
     sendBtn.disabled = false;
+    response = response.replace('__POTENTIALLY_UNSAFE__', '')
     responseDiv.innerHTML = response;
 }
